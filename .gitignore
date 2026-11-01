@@ -5,8 +5,14 @@ build/
 .dev.vars
 .env
 .env.local
-.env.*.local
+.env.*
+!.env.example
 *.log
+*.sqlite
+*.sqlite3
+*.db
+*.sqlite-*
+*.db-*
 .DS_Store
 .vscode/
 .idea/

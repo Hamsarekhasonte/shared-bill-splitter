@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "wrangler d1 migrations apply DB --local && wrangler dev",
+    "seed:local": "wrangler d1 execute DB --local --file=./scripts/seed-local.sql",
     "deploy": "wrangler deploy",
     "cf-typegen": "wrangler types",
     "postinstall": "wrangler types",

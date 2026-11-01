@@ -5,7 +5,7 @@
     "dev": "concurrently -n api,web -c blue,magenta \"pnpm --filter bill-splitter-api dev\" \"pnpm --filter bill-splitter-web dev\"",
     "build": "pnpm --filter bill-splitter-web build",
     "typecheck": "pnpm -r typecheck",
-    "test": "pnpm --filter bill-splitter-api test",
+    "test": "pnpm --filter bill-splitter-api test && pnpm --filter bill-splitter-web test",
     "check": "biome check .",
     "check:fix": "biome check --write .",
     "format": "biome format --write .",
